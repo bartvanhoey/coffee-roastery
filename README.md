@@ -16,22 +16,46 @@ serif display type, gold accents, film grain, and looping background video.
 | `/stores`          | Salones (locations) and wholesale                                       |
 | `/contact`         | Contact form and roastery details                                       |
 
+## Prerequisites
+
+- Node.js 20.9 or newer (required by Next.js 16)
+- npm
+
 ## Running it
 
 ```bash
 npm install
 npm run dev      # http://localhost:3000
 npm run build    # production build, all routes prerendered
+npm start        # serve the production build
 npm run lint
 ```
 
+This project uses Next.js 16, which has breaking changes compared to earlier
+versions. Before changing framework-level code, read the bundled docs in
+`node_modules/next/dist/docs/` (see `AGENTS.md`).
+
+## Tech stack
+
+- [Next.js](https://nextjs.org/) 16 (App Router), React 19, TypeScript
+- Tailwind CSS 4 (via `@tailwindcss/postcss`)
+- ESLint 9 with `eslint-config-next`
+- Playwright (`playwright-core`) for the scroll-craft visual checks
+
 ## Where things live
 
-- `lib/products.ts` — the catalogue (16 products across 5 categories) and helpers.
+- `lib/products.ts` — the catalogue (17 products across 5 categories) and helpers.
 - `lib/site.ts` — brand copy, navigation, origins, timeline, team, craft steps, stores.
 - `components/` — `Header`, `Footer`, `VideoBackground`, `Reveal` (scroll-in), `ProductGrid` (filters), `PageHero`, etc.
 - `app/globals.css` — colour tokens, fonts, keyframes, grain overlay, reveal transitions.
+- `components/scroll-craft.tsx`, `lib/scrollcraft/`, `app/scrollcraft.css` — the scroll-driven animation layer (see below).
 - `public/videos/` — twelve 720p background clips.
+
+## Scroll-craft
+
+The site uses a dependency-free scroll engine (`lib/scrollcraft/`) for layered parallax, pinned and scrubbed video sections, and kinetic type. Wrap a page's scroll-driven content in the `ScrollCraft` component from `components/scroll-craft.tsx`; it mounts the engine after hydration and destroys it on unmount. Acts are declared with `data-sc-*` attributes in the markup (for example `data-sc-act="scrub"`). Keep `ScrollCraft` inside each page, not in the root layout.
+
+The design intent and per-route scoring are in `scrollcraft/BRIEF.md`. Desktop, mobile and reduced-motion verification screenshots are in `scrollcraft/lab/`.
 
 ## Media and licences
 
@@ -42,3 +66,7 @@ npm run lint
 
 - Background videos are muted, loop, only play while on screen, and stay on their poster image when the visitor has reduced motion enabled.
 - The brand, people, places and products are invented for this demo.
+
+## License
+
+Released under the [MIT License](LICENSE). Third-party media keep their own licences, see above.
