@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- First thing in <head>: lets scrollcraft.css hide cued copy before paint, and
+     only when script runs. A visitor without JavaScript sees everything. -->
+<script>document.documentElement.classList.add("sc-js")</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Halden Roast · Roasted by the harbour in Bergen</title>
+<meta name="description" content="Single-origin coffee roasted by two people in a roastery by the harbour in Bergen, sent by subscription the week it is roasted.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230B1114'/><path d='M16 6c5.5 0 8 5.5 8 10s-2.5 10-8 10-8-5.5-8-10 2.5-10 8-10z' fill='%23CF8A55'/><path d='M16.4 8.5c-2.2 4-1 8.5-1.6 14.5' stroke='%230B1114' stroke-width='1.6' fill='none' stroke-linecap='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Geist:wght@400;500&family=Geist+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="scrollcraft.css">
+<link rel="stylesheet" href="halden.css">
+</head>
+<body>
+
+<div class="sc-grain" aria-hidden="true"></div>
+
+<!-- The divider is the chrome. It carries both labels, the wordmark, and the
+     roast: two beans that darken as the page is scrolled. Its position is the
+     page's one moving part outside the acts, driven by halden.js from --split. -->
+<header class="divider" id="divider" data-sc-verify-state="">
+  <div class="divider__line" aria-hidden="true"></div>
+
+  <div class="side side--a">
+    <p class="side__label">The supermarket</p>
+    <svg class="bean" viewBox="0 0 32 44" width="26" height="36" aria-hidden="true" focusable="false">
+      <path class="bean__body" d="M16 2C26.5 2 30.5 13 30.5 22S26 42 16 42 1.5 31 1.5 22 5.5 2 16 2Z"/>
+      <path class="bean__crease" d="M16.5 5.5C12.5 13 19.5 24 15 38.5"/>
+      <ellipse class="bean__sheen" cx="11" cy="14" rx="3" ry="5.5" transform="rotate(-20 11 14)"/>
+    </svg>
+    <p class="side__stage" id="stage-a">Oily, dark</p>
+  </div>
+
+  <div class="side side--b">
+    <p class="side__label side__label--mark">Halden Roast</p>
+    <svg class="bean" viewBox="0 0 32 44" width="26" height="36" aria-hidden="true" focusable="false">
+      <path class="bean__body" d="M16 2C26.5 2 30.5 13 30.5 22S26 42 16 42 1.5 31 1.5 22 5.5 2 16 2Z"/>
+      <path class="bean__crease" d="M16.5 5.5C12.5 13 19.5 24 15 38.5"/>
+      <ellipse class="bean__sheen" cx="11" cy="14" rx="3" ry="5.5" transform="rotate(-20 11 14)"/>
+    </svg>
+    <p class="side__stage" id="stage-b">Stopped after first crack</p>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 1 · STILLNESS. The split, 50/50, both headlines readable at once.
+       Three planes per half at different rates; copy rides at 1x. -->
+  <section class="act act--hero" id="hero" data-sc-act="pin" data-sc-span="2.2" aria-labelledby="h1">
+    <div data-sc-stage class="stage">
+
+      <div class="half half--a">
+        <div class="planes" aria-hidden="true">
+          <div class="plate plate--far" data-sc-parallax="-1.0"><span class="plate__tag">A1 · Plate · coffee aisle under fluorescent light, wide, empty upper half</span></div>
+          <div class="plate plate--mid plate--cutout" data-sc-parallax="-0.5"><span class="plate__tag">A2 · Cutout · a shelf of bags, alpha</span></div>
+          <div class="atmo atmo--glare" data-sc-parallax="0.45"></div>
+        </div>
+        <div class="copy copy--hero" data-sc-cue="0 0.78 0 0.2">
+          <p class="sc-display sc-display--md">Roasted somewhere. Sometime.</p>
+          <p class="sc-body">Blended from several countries, roasted dark, best before a long time from now.</p>
+        </div>
+      </div>
+
+      <div class="half half--b">
+        <div class="planes" aria-hidden="true">
+          <div class="plate plate--far" data-sc-parallax="-1.0"><span class="plate__tag">B1 · Plate · Vågen from the roastery window, first light, wide, empty upper third</span></div>
+          <div class="plate plate--mid plate--cutout" data-sc-parallax="-0.5"><span class="plate__tag">B2 · Cutout · the drum roaster in front of the window, alpha</span></div>
+          <div class="atmo atmo--steam" data-sc-parallax="0.5"></div>
+        </div>
+        <div class="copy copy--hero" data-sc-cue="0 0.8 0 0.2">
+          <h1 class="sc-display sc-display--md" id="h1">Roasted by the harbour in Bergen. This week.</h1>
+          <p class="sc-body">One farm per bag, roasted by two people on one drum, sent the week it is roasted.</p>
+          <!-- Replace #start with the checkout URL when it exists. -->
+          <a class="cta" href="#start">Start a subscription</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 2 · RECOGNITION. The bag they hold, next to the bag Halden sends.
+       Both labels use the same schema, so the comparison is honest. -->
+  <section class="act act--bag" id="bag" data-sc-act="pin" data-sc-span="2.0" aria-label="The bag">
+    <div data-sc-stage class="stage">
+
+      <div class="half half--a">
+        <figure class="bag" data-sc-reveal="up" data-sc-reveal-at="0.02 0.4" aria-hidden="true">
+          <div class="plate plate--bag"><span class="plate__tag">A3 · Cutout · one supermarket bag, front</span></div>
+        </figure>
+        <dl class="label copy copy--label">
+          <div data-sc-cue="0 0.96 0 0.08"><dt>Origin</dt><dd>Several countries. None named.</dd></div>
+          <div data-sc-cue="0.1 0.96 0.12 0.08"><dt>Roasted</dt><dd>Not stated.</dd></div>
+          <div data-sc-cue="0.22 0.96 0.12 0.08"><dt>Best before</dt><dd>Next year, or the year after.</dd></div>
+          <div data-sc-cue="0.34 0.96 0.1 0.08"><dt>Roasted by</dt><dd>A plant.</dd></div>
+        </dl>
+      </div>
+
+      <div class="half half--b">
+        <figure class="bag" data-sc-reveal="left" data-sc-reveal-at="0.08 0.46" aria-hidden="true">
+          <div class="plate plate--bag"><span class="plate__tag">B3 · Cutout · one Halden bag, front, the hand-written roast date legible</span></div>
+        </figure>
+        <dl class="label copy copy--label">
+          <div data-sc-cue="0.06 0.96 0.1 0.08"><dt>Origin</dt><dd>One farm. Named on the bag.</dd></div>
+          <div data-sc-cue="0.14 0.96 0.1 0.08"><dt>Roasted</dt><dd>The date, written by hand.</dd></div>
+          <div data-sc-cue="0.26 0.96 0.1 0.08"><dt>Best before</dt><dd>We would rather you drank it this month.</dd></div>
+          <div data-sc-cue="0.34 0.96 0.08 0.08"><dt>Roasted by</dt><dd>Two people, by the harbour.</dd></div>
+        </dl>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3 · TENSION. The roast. The beans on the divider do the arguing; the
+       balance tips eight percent across this act. -->
+  <section class="act act--roast" id="roast" data-sc-act="pin" data-sc-span="3" aria-labelledby="h-roast">
+    <div data-sc-stage class="stage">
+
+      <div class="half half--a">
+        <div class="plate plate--clip" aria-hidden="true"><span class="plate__tag">A4 · Clip · an industrial roasting line, wide, static camera</span></div>
+        <div class="copy copy--roast">
+          <p class="sc-display sc-display--md" data-sc-cue="0 0.5 0 0.2">Roasted dark.</p>
+          <div class="stackcell">
+            <p class="sc-lede" data-sc-cue="0.3 0.74 0.3 0.2">Dark is safe. Dark tastes the same from any farm, in any year.</p>
+            <p class="sc-lede" data-sc-cue="0.62 1 0.25 0.04">Dark hides a lot.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="half half--b">
+        <div class="plate plate--clip" aria-hidden="true"><span class="plate__tag">B4 · Clip · beans turning behind the drum glass, macro, one continuous take</span></div>
+        <div class="copy copy--roast">
+          <h2 class="sc-display sc-display--md" id="h-roast" data-sc-cue="0.06 0.58 0.35 0.15" data-sc-kinetic="lines">Roasted until the farm shows. Then stopped.</h2>
+          <p class="sc-lede" data-sc-cue="0.5 1 0.22 0.04">A light roast has nowhere to hide, which is the point of it. Every batch is tasted before it is bagged, and the bean on the line above stops where we stop.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4 · INTIMACY. The quiet act before the end. Authored silence: one wipe,
+       two lines, and the beans still roasting on the divider. -->
+  <section class="act act--people" id="people" data-sc-act="pin" data-sc-span="1.8" aria-label="Two people, one drum">
+    <div data-sc-stage class="stage">
+
+      <div class="half half--a">
+        <p class="copy copy--whisper sc-lede" data-sc-cue="0.2 1 0.3 0.015">Nobody's name is on it.</p>
+      </div>
+
+      <div class="half half--b">
+        <figure class="portrait" data-sc-reveal="left" data-sc-reveal-at="0.04 0.5" aria-hidden="true">
+          <div class="plate plate--portrait"><span class="plate__tag">B5 · Still · the two of them at the drum, available light, unposed</span></div>
+        </figure>
+        <div class="copy copy--people" data-sc-cue="0 1 0 0.015">
+          <p class="sc-lede">Two of us. One drum. The harbour outside the window.</p>
+          <p class="sc-body">We roast it, taste it, bag it and post it ourselves. If a batch is not right, it does not leave the building. Our names are on the bag because we are the ones who roasted it.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5 · RESOLVE. The collapse. The supermarket half is pushed off the left
+       edge, Halden takes the full width, and the page holds on one button.
+       Last act: one-value cues, footer inside the stage. -->
+  <section class="act act--close" id="start" data-sc-act="pin" data-sc-span="4.2" aria-labelledby="h-close">
+    <div data-sc-stage class="stage">
+
+      <div class="half half--a">
+        <p class="copy copy--whisper sc-lede" data-sc-cue="0 0.38 0 0.1">It will still be there if you change your mind.</p>
+      </div>
+
+      <div class="half half--b">
+        <div class="copy copy--close">
+          <h2 class="sc-display sc-display--lg" id="h-close" data-sc-cue="0.34" data-sc-kinetic="lines">One farm at a time, roasted the week it ships.</h2>
+          <p class="sc-lede" data-sc-cue="0.46">Choose how much and how often. Pause or stop whenever you like. Every bag carries the farm's name and the day it was roasted.</p>
+          <!-- Replace #start with the checkout URL when it exists. -->
+          <a class="cta cta--close" id="cta-close" href="#start" data-sc-cue="0.56">Start a subscription</a>
+        </div>
+        <footer class="foot" data-sc-cue="0.68">
+          <p><span class="foot__mark">Halden Roast</span> Bergen, Norway. Roasted by the harbour.</p>
+          <p class="foot__note">Photographs and film to follow. Every grey box on this page marks a shot we have not taken yet.</p>
+        </footer>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<script src="scrollcraft.js"></script>
+<script src="halden.js"></script>
+</body>
+</html>

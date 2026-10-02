@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Northlight Studio · Brand and product design for hardware companies</title>
+<meta name="description" content="Northlight is a four-person design studio in Rotterdam. We design the brand, the product and the launch for hardware companies.">
+<!-- Marks the document as scripted before first paint. Every hidden-initial
+     state in styles.css is scoped to html.js, so with scripting off the page
+     is a complete plain document. -->
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="scrollcraft.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="mark" href="#top">Northlight</a>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#team">Team</a>
+    <a class="cta" href="#contact">Start a project</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- 1 · Stillness. A natural-flow hero built as three planes plus copy at 1x:
+       the light wash (far, lags), the framed photograph (mid), the plinth slab
+       (near, leads). Progress comes from the act's own --sc-p; no pinning, so
+       reduced motion needs no extra scroll space to get a complete frame. -->
+  <section class="hero" data-sc-act="flow">
+    <div class="hero__stage">
+      <div class="hero__light" data-sc-parallax="1.6" aria-hidden="true"></div>
+      <div class="hero__copy">
+        <h1>Hardware deserves a launch as considered as its enclosure.</h1>
+        <p>We are a four-person studio that designs the brand, the product surfaces and the launch for companies that make physical things.</p>
+        <a class="cta" href="#contact">Start a project</a>
+      </div>
+      <div class="hero__media">
+        <figure class="frame hero__frame" data-sc-parallax="0.6">
+          <img class="hero__img" src="assets/hero.jpg" width="2400" height="1500" alt="A matte aluminium speaker on a concrete plinth, lit from one side">
+        </figure>
+        <div class="hero__plinth" data-sc-parallax="-0.9" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · Breadth. The four projects travel sideways under the reader's hand.
+       The heading rides in the rail as its first item so the travel is real at
+       every width; each card settles in sequence off --sc-p. -->
+  <section id="work" class="work" data-sc-act="pan" data-sc-span="2.6">
+    <div class="work__stage" data-sc-stage>
+      <div class="rail" data-sc-pan="0.04">
+        <h2 class="rail__lead">Selected work</h2>
+        <ul class="grid rail__list">
+          <li class="card" style="--i:0"><figure class="frame"><img src="assets/work-1.jpg" width="1200" height="900" alt="Loom smart thermostat on a plaster wall" loading="lazy" decoding="async"></figure><h3>Loom</h3><p>Thermostat, app and launch film. 2025.</p></li>
+          <li class="card" style="--i:1"><figure class="frame"><img src="assets/work-2.jpg" width="1200" height="900" alt="Anser field microphone in a rubber sleeve" loading="lazy" decoding="async"></figure><h3>Anser</h3><p>Industrial design and packaging. 2025.</p></li>
+          <li class="card" style="--i:2"><figure class="frame"><img src="assets/work-3.jpg" width="1200" height="900" alt="Kessel espresso machine, brushed steel" loading="lazy" decoding="async"></figure><h3>Kessel</h3><p>Brand, product photography, store. 2024.</p></li>
+          <li class="card" style="--i:3"><figure class="frame"><img src="assets/work-4.jpg" width="1200" height="900" alt="Verge e-bike controller mounted on handlebars" loading="lazy" decoding="async"></figure><h3>Verge</h3><p>Controller UI and onboarding. 2024.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · Order. The frame holds; the heading and the four numerals are the
+       ground, and the four steps arrive one after another and stay. Windows
+       overlap, all four are present by p=0.75, and they leave together between
+       0.80 and 0.90 so no sample lands on a half-faded line. -->
+  <section id="process" class="process" data-sc-act="pin" data-sc-span="2.4">
+    <div class="process__stage" data-sc-stage>
+      <h2>How we work</h2>
+      <ol class="steps">
+        <li class="step" style="--from:0.03"><span class="n">01</span><div class="step__body" data-sc-cue="0.03 0.9 0.172 0.115"><h3>Discover</h3><p>Three weeks with your engineers and your customers. We leave with a point of view, not a mood board.</p></div></li>
+        <li class="step" style="--from:0.22"><span class="n">02</span><div class="step__body" data-sc-cue="0.22 0.9 0.221 0.147"><h3>Define</h3><p>One brand idea, one product language, one launch story. Written down and signed before pixels.</p></div></li>
+        <li class="step" style="--from:0.41"><span class="n">03</span><div class="step__body" data-sc-cue="0.41 0.9 0.306 0.204"><h3>Design</h3><p>Enclosure surfaces, interface, packaging and film, designed together so they agree.</p></div></li>
+        <li class="step" style="--from:0.60"><span class="n">04</span><div class="step__body" data-sc-cue="0.60 0.9 0.5 0.333"><h3>Deliver</h3><p>Production-ready files, a launch site, and a week on-site with your team for the release.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 4 · Weight. The studio's own three figures tick into place once, on
+       entry, eased out hard. The quiet beat before the peak. -->
+  <section class="numbers">
+    <ul data-sc-in data-sc-stagger="90">
+      <li><strong><span data-sc-count="0 14">14</span></strong><span>products shipped</span></li>
+      <li><strong><span data-sc-count="0 4">4</span></strong><span>people, no account managers</span></li>
+      <li><strong><span data-sc-count="0 9">9</span> yrs</strong><span>average client relationship</span></li>
+    </ul>
+  </section>
+
+  <!-- 5 · Intimacy. The peak and the largest span on the page. A dark plate
+       rises over the cream (already covering the lower part of the stage as it
+       slides in, so the stage is never empty), then the client's sentence
+       assembles line by line and holds. -->
+  <section class="quote" data-sc-act="pin" data-sc-span="3">
+    <div class="quote__stage" data-sc-stage>
+      <div class="quote__plate" data-sc-reveal="down" data-sc-reveal-at="-0.35 0.28" aria-hidden="true"></div>
+      <blockquote>
+        <p data-sc-cue="0.24 0.9 0.35 0.15" data-sc-kinetic="lines">“They understood that the unboxing is the first thirty seconds of the product. Our return rate halved.”</p>
+        <footer data-sc-cue="0.44 0.9 0.24 0.22">Ida Berglund, founder, Loom</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- 6 · Warmth. The ordinary section, done well: paper ground again,
+       portraits rise 14px in reading order. -->
+  <section id="team" class="team">
+    <h2 data-sc-in>The four of us</h2>
+    <ul class="grid team__grid" data-sc-in data-sc-stagger="70">
+      <li><figure class="frame"><img src="assets/team-1.jpg" width="800" height="1000" alt="Portrait of Mara" loading="lazy" decoding="async"></figure><h3>Mara</h3><p>Industrial design</p></li>
+      <li><figure class="frame"><img src="assets/team-2.jpg" width="800" height="1000" alt="Portrait of Tobias" loading="lazy" decoding="async"></figure><h3>Tobias</h3><p>Brand and type</p></li>
+      <li><figure class="frame"><img src="assets/team-3.jpg" width="800" height="1000" alt="Portrait of Sena" loading="lazy" decoding="async"></figure><h3>Sena</h3><p>Interface</p></li>
+      <li><figure class="frame"><img src="assets/team-4.jpg" width="800" height="1000" alt="Portrait of Joris" loading="lazy" decoding="async"></figure><h3>Joris</h3><p>Film and photography</p></li>
+    </ul>
+  </section>
+
+  <!-- 7 · Intent. The plate wipes open from the top and hands over the form.
+       Nothing on it fades afterwards; the close holds. The form is untouched. -->
+  <section id="contact" class="contact" data-sc-act="flow">
+    <div class="contact__plate" data-sc-reveal="up" data-sc-reveal-at="0.06 0.3">
+      <h2>Start a project</h2>
+      <p>We take on four projects a year. Tell us what you are making and when it needs to ship.</p>
+      <form action="/inquire" method="post">
+        <label>Your name <input name="name" required></label>
+        <label>Email <input name="email" type="email" required></label>
+        <label>What are you making? <textarea name="brief" rows="4"></textarea></label>
+        <button class="cta" type="submit">Start a project</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <span>Northlight Studio, Rotterdam</span>
+  <span>hello@northlight.example</span>
+</footer>
+
+<script src="scrollcraft.js"></script>
+<script>
+  ScrollCraft.mount(document.body);
+
+  /* Page-local behaviour. The engine is untouched. */
+  (function () {
+    var root = document.documentElement;
+    var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // A hairline under the bar once the page has moved. One class, one toggle.
+    var bar = document.querySelector('.bar');
+    function barState() { if (bar) bar.classList.toggle('bar--scrolled', scrollY > 8); }
+    addEventListener('scroll', barState, { passive: true });
+    barState();
+
+    // Keyboard entry into the contact plate. The plate wipes open on the act's
+    // own progress, so a control focused while the act is still near the fold
+    // could be focused and clipped at once. Park the act where the plate is
+    // open: centre the control. 'instant', because scroll-behavior is smooth.
+    var plate = document.querySelector('.contact__plate');
+    var contactAct = plate && plate.closest('[data-sc-act]');
+    if (plate && contactAct) {
+      plate.addEventListener('focusin', function (e) {
+        var p = parseFloat(getComputedStyle(contactAct).getPropertyValue('--sc-p'));
+        if (!isNaN(p) && p < 0.32) e.target.scrollIntoView({ block: 'center', behavior: 'instant' });
+      });
+    }
+
+    // THE SIGNATURE MOVE: one lamp for the whole page.
+    // The hero says the speaker is lit from one side. So the page is: a single
+    // light position (--nl-lx/--nl-ly, 0..1) travels from upper-right at the
+    // top of the document to upper-left at the bottom, and every framed image
+    // carries a blurred shadow plate whose transform reads the derived offset
+    // (--nl-sx/--nl-sy). All the shadows on the page swing together as the
+    // reader scrolls. On a fine pointer the lamp leans up to 8% toward the
+    // mouse. Transform-only, one rAF loop that idles when it has arrived.
+    // Under reduced motion nothing here runs and the CSS rest values render
+    // the same frame the page shows without JavaScript.
+    if (reduce) return;
+    var fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+    var lean = 0, cx = 0.82, cy = 0.18, tx = cx, ty = cy, raf = 0;
+    function targets() {
+      var max = Math.max(root.scrollHeight - innerHeight, 1);
+      var s = Math.min(Math.max(scrollY / max, 0), 1);
+      tx = 0.82 - 0.60 * s + lean * 0.08;
+      ty = 0.18 + 0.20 * s;
+    }
+    function frame() {
+      cx += (tx - cx) * 0.1; cy += (ty - cy) * 0.1;
+      root.style.setProperty('--nl-lx', cx.toFixed(4));
+      root.style.setProperty('--nl-ly', cy.toFixed(4));
+      root.style.setProperty('--nl-sx', ((0.5 - cx) * 44).toFixed(2) + 'px');
+      root.style.setProperty('--nl-sy', (10 + cy * 36).toFixed(2) + 'px');
+      raf = (Math.abs(tx - cx) > 0.0005 || Math.abs(ty - cy) > 0.0005) ? requestAnimationFrame(frame) : 0;
+    }
+    function kick() { targets(); if (!raf) raf = requestAnimationFrame(frame); }
+    addEventListener('scroll', kick, { passive: true });
+    addEventListener('resize', kick, { passive: true });
+    if (fine) addEventListener('pointermove', function (e) {
+      if (e.pointerType !== 'mouse') return;
+      lean = Math.max(-1, Math.min(1, (e.clientX / innerWidth - 0.5) * 2));
+      kick();
+    }, { passive: true });
+    kick();
+  })();
+</script>
+</body>
+</html>

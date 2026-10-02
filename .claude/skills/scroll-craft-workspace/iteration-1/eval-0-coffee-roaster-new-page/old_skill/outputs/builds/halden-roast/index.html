@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Halden Roast · Roasted this week, in Bergen</title>
+<meta name="description" content="Single-origin coffee roasted by two people at a small roastery on Bergen harbour, delivered by subscription the week it is roasted.">
+<meta name="theme-color" content="#121110">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23121110'/><ellipse cx='16' cy='16' rx='7' ry='10' fill='%23E08A3C' transform='rotate(-18 16 16)'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Instrument+Sans:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="scrollcraft.css">
+<link rel="stylesheet" href="halden.css">
+<noscript>
+<style>
+  /* Without the engine nothing cues, pins or wipes. Show everything, in order. */
+  [data-sc-cue], [data-sc-in], [data-sc-stagger] > * { opacity: 1 !important; transform: none !important; }
+  [data-sc-reveal] { clip-path: none !important; }
+  [data-sc-stage] { position: relative; min-height: 100svh; }
+  .hr-trier { display: none; }
+</style>
+</noscript>
+</head>
+<body>
+
+<div class="sc-grain" aria-hidden="true"></div>
+
+<!-- Two grounds, one per side. They hold for the whole page. -->
+<div class="hr-grounds" aria-hidden="true">
+  <div class="hr-ground hr-ground--shelf"></div>
+  <div class="hr-ground hr-ground--roastery"></div>
+</div>
+
+<!-- The divider is the chrome: both labels, and the argument's progress as a
+     spoon of beans that roasts on the way down. -->
+<div class="hr-chrome" aria-hidden="true">
+  <div class="hr-divider">
+    <div class="hr-divider__line"></div>
+    <div class="hr-side hr-side--shelf">Supermarket shelf</div>
+    <div class="hr-side hr-side--roastery"><span class="hr-mark">Halden Roast</span> <span class="hr-side__place">Bergen</span></div>
+    <div class="hr-trier">
+      <svg class="hr-trier__svg" viewBox="0 0 72 40" width="72" height="40">
+        <path class="hr-trier__handle" d="M0 27 H14" />
+        <path class="hr-trier__bowl" d="M14 20 C16 33, 62 33, 64 20" />
+        <g class="hr-beans">
+          <g class="hr-bean" transform="translate(24 20) rotate(-22)"><ellipse rx="5.2" ry="7.6"/><path class="hr-bean__crease" d="M0 -6.2 C1.6 -3, -1.6 3, 0 6.2"/></g>
+          <g class="hr-bean" transform="translate(34 17) rotate(14)"><ellipse rx="5.4" ry="7.8"/><path class="hr-bean__crease" d="M0 -6.4 C1.6 -3, -1.6 3, 0 6.4"/></g>
+          <g class="hr-bean" transform="translate(45 19) rotate(-8)"><ellipse rx="5.1" ry="7.4"/><path class="hr-bean__crease" d="M0 -6 C1.6 -3, -1.6 3, 0 6"/></g>
+          <g class="hr-bean" transform="translate(54 22) rotate(26)"><ellipse rx="4.8" ry="7"/><path class="hr-bean__crease" d="M0 -5.6 C1.5 -2.8, -1.5 2.8, 0 5.6"/></g>
+          <g class="hr-bean hr-bean--top" transform="translate(39 24) rotate(42)"><ellipse rx="4.9" ry="7.2"/><path class="hr-bean__crease" d="M0 -5.8 C1.5 -2.9, -1.5 2.9, 0 5.8"/></g>
+        </g>
+      </svg>
+      <span class="hr-trier__phase">green</span>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- 1 · RECOGNITION: two mornings, side by side. Four planes per side, each
+       at its own rate; the copy rides at 1x. -->
+  <section class="hr-hero" id="hero" data-sc-act="pin" data-sc-span="2.2" aria-labelledby="hero-h">
+    <div data-sc-stage class="hr-stage hr-stage--hero">
+
+      <div class="hr-half hr-half--shelf">
+        <div class="hr-scene" aria-hidden="true">
+          <div class="hr-plane hr-plane--back hr-plane--cold" data-sc-parallax="-1.2"><div class="hr-plane__in"><span class="hr-plane__tag" data-sc-cue="0.3 1 0.2 0.015">Background plate · the aisle, fluorescent</span></div></div>
+          <div class="hr-plane hr-plane--mid hr-plane--cold" data-sc-parallax="-0.6"><div class="hr-plane__in"><span class="hr-plane__tag" data-sc-cue="0.34 1 0.2 0.015">Mid · the shelf</span></div></div>
+          <div class="hr-plane hr-plane--subject hr-plane--cold" data-sc-parallax="-0.25"><div class="hr-plane__in"><span class="hr-plane__tag" data-sc-cue="0.38 1 0.2 0.015">Subject · the bag</span></div></div>
+          <div class="hr-plane hr-plane--fore hr-plane--cold" data-sc-parallax="0.45"><div class="hr-plane__in"><span class="hr-plane__tag" data-sc-cue="0.42 1 0.2 0.015">Foreground · trolley edge, out of focus</span></div></div>
+        </div>
+        <div class="hr-hero__copy hr-hero__copy--shelf" data-sc-cue="0 1 0 0.015">
+          <p class="sc-display sc-display--lg hr-h hr-h--shelf">Roasted in Europe.</p>
+          <p class="hr-lede hr-lede--shelf">That is all the bag says. It is not wrong.</p>
+        </div>
+        <p class="hr-shot hr-shot--shelf"><b>Placeholder</b> · footage, 4 planes · static wide, flat light, no weather</p>
+      </div>
+
+      <div class="hr-half hr-half--roastery">
+        <div class="hr-scene" aria-hidden="true">
+          <div class="hr-plane hr-plane--back hr-plane--warm" data-sc-parallax="-1.2"><div class="hr-plane__in"><span class="hr-plane__tag" data-sc-cue="0.3 1 0.2 0.015">Background plate · the harbour, 06:40, fog</span></div></div>
+          <div class="hr-plane hr-plane--mid hr-plane--warm" data-sc-parallax="-0.6"><div class="hr-plane__in"><span class="hr-plane__tag" data-sc-cue="0.34 1 0.2 0.015">Mid · the roastery window, lit</span></div></div>
+          <div class="hr-plane hr-plane--subject hr-plane--warm" data-sc-parallax="-0.25"><div class="hr-plane__in"><span class="hr-plane__tag" data-sc-cue="0.38 1 0.2 0.015">Subject · one of us at the drum</span></div></div>
+          <div class="hr-plane hr-plane--atmos" data-sc-parallax="-0.12"><div class="hr-plane__in"></div></div>
+          <div class="hr-plane hr-plane--fore hr-plane--warm" data-sc-parallax="0.45"><div class="hr-plane__in"><span class="hr-plane__tag" data-sc-cue="0.42 1 0.2 0.015">Foreground · rain on the glass</span></div></div>
+        </div>
+        <div class="hr-hero__copy hr-hero__copy--roastery" data-sc-cue="0 1 0 0.015">
+          <h1 class="sc-display sc-display--lg hr-h" id="hero-h">Roasted on Tuesday, in Bergen.</h1>
+          <p class="hr-lede">Two of us, one drum, by the harbour. One farm at a time, shipped the week it is roasted.</p>
+          <a class="hr-cta" href="#subscribe">Start a subscription</a>
+        </div>
+        <p class="hr-shot hr-shot--roastery"><b>Placeholder</b> · footage, 5 planes · static wide, one warm key in the window, fog in front and behind</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 2 · NOTICING: the date on the bag. Wipes from opposite directions. -->
+  <section class="hr-beat hr-beat--after-pin" id="date" data-sc-act="flow" aria-labelledby="date-h">
+    <div class="hr-cols">
+      <div class="hr-col hr-col--shelf">
+        <div class="hr-col__in">
+          <figure class="hr-figure" data-sc-reveal="down" data-sc-reveal-at="0.2 0.5">
+            <div class="hr-plate hr-plate--cold hr-plate--tall">
+              <span class="hr-plate__tag"><b>Placeholder</b> · photo · the back of a supermarket bag, best-before date, flat light</span>
+            </div>
+          </figure>
+          <div class="sc-stack hr-stack" data-sc-in data-sc-stagger="70">
+            <h2 class="sc-display sc-display--md hr-h hr-h--shelf">Best before: next spring.</h2>
+            <p class="hr-body hr-body--shelf">A supermarket bag is packed to wait. Months in a warehouse, weeks on a shelf. The date on the back is the day it stops being sellable, not the day it was roasted. Nobody wrote that one down.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hr-col hr-col--roastery">
+        <div class="hr-col__in">
+          <figure class="hr-figure" data-sc-reveal="up" data-sc-reveal-at="0.26 0.56">
+            <div class="hr-plate hr-plate--warm hr-plate--tall">
+              <span class="hr-plate__tag"><b>Placeholder</b> · photo · a Halden bag, roast date written by hand, window light</span>
+            </div>
+          </figure>
+          <div class="sc-stack hr-stack" data-sc-in data-sc-stagger="70">
+            <h2 class="sc-display sc-display--md hr-h" id="date-h">Roasted: the date is on the bag.</h2>
+            <p class="hr-body">Coffee is at its best in the first few weeks after roasting. So the roast date goes on every bag, by hand, and nothing leaves the roastery more than a week after it came out of the drum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · INTIMACY: the frame holds. Lines cross over on both sides. -->
+  <section class="hr-roast" id="roast" data-sc-act="pin" data-sc-span="2.4" aria-labelledby="roast-h">
+    <div data-sc-stage class="hr-stage hr-stage--roast">
+      <div class="hr-cols hr-cols--stage">
+        <div class="hr-col hr-col--shelf">
+          <div class="hr-col__in hr-argument">
+            <p class="sc-display sc-display--md hr-h hr-h--shelf" data-sc-cue="0 1 0 0.015">Nobody is standing there.</p>
+            <div class="hr-lines">
+              <p class="hr-line hr-line--shelf" data-sc-cue="0 0.30 0 0.25">A factory roaster runs all night. It is set once, and it is left.</p>
+              <p class="hr-line hr-line--shelf" data-sc-cue="0.26 0.58 0.2 0.15">Very hot, very fast, so the batch is done in minutes and the next one is already loading.</p>
+              <p class="hr-line hr-line--shelf" data-sc-cue="0.52 1 0.15 0.03">It comes out even, dark, and the same every time. That is the point of it.</p>
+            </div>
+          </div>
+        </div>
+        <div class="hr-col hr-col--roastery">
+          <div class="hr-col__in hr-argument">
+            <div class="hr-inset" aria-hidden="true">
+              <div class="hr-plate hr-plate--warm hr-plate--inset">
+                <span class="hr-plate__tag"><b>Placeholder</b> · footage · hands pulling the trier, close, slow</span>
+              </div>
+            </div>
+            <h2 class="sc-display sc-display--md hr-h" id="roast-h" data-sc-cue="0 1 0 0.015" data-sc-kinetic="lines">Someone is listening.</h2>
+            <div class="hr-lines">
+              <p class="hr-line" data-sc-cue="0 0.30 0 0.25">Ours runs when one of us is standing in front of it, and not otherwise.</p>
+              <p class="hr-line" data-sc-cue="0.26 0.58 0.2 0.15">A few minutes in there is a sound like kindling catching. First crack. From there every half minute changes the cup, and someone decides, by ear and by nose, when to drop it.</p>
+              <p class="hr-line" data-sc-cue="0.52 1 0.15 0.03">You will taste that decision. It is the whole difference, and it is the only one that matters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · TRUST: the two labels, typeset the same way. -->
+  <section class="hr-beat hr-beat--after-pin" id="label" data-sc-act="flow" aria-labelledby="label-h">
+    <div class="hr-cols">
+      <div class="hr-col hr-col--shelf">
+        <div class="hr-col__in">
+          <div class="sc-stack hr-stack" data-sc-in data-sc-stagger="70">
+            <h2 class="sc-display sc-display--md hr-h hr-h--shelf">Blend. Arabica and Robusta.</h2>
+            <p class="hr-body hr-body--shelf">Origin unknown, on purpose. Beans from wherever was cheapest that quarter, blended so this bag tastes like the last one.</p>
+          </div>
+          <dl class="hr-label hr-label--shelf" data-sc-in data-sc-stagger="60">
+            <div class="hr-label__row"><dt>Origin</dt><dd>Blend of Arabica and Robusta</dd></div>
+            <div class="hr-label__row"><dt>Farm</dt><dd>Not stated</dd></div>
+            <div class="hr-label__row"><dt>Roasted</dt><dd>Not stated</dd></div>
+            <div class="hr-label__row"><dt>Best before</dt><dd>Next spring</dd></div>
+            <div class="hr-label__row"><dt>Roasted by</dt><dd>Not stated</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="hr-col hr-col--roastery">
+        <div class="hr-col__in">
+          <div class="sc-stack hr-stack" data-sc-in data-sc-stagger="70">
+            <h2 class="sc-display sc-display--md hr-h" id="label-h">One farm at a time.</h2>
+            <p class="hr-body">Every bag names the farm, the region, the variety and how it was processed, and the day we roasted it. When that lot is gone we move to the next one, and the coffee changes. That is the point of it.</p>
+          </div>
+          <dl class="hr-label" data-sc-in data-sc-stagger="60">
+            <div class="hr-label__row"><dt>Origin</dt><dd>One farm, named</dd></div>
+            <div class="hr-label__row"><dt>Lot</dt><dd>Region, altitude, variety, process</dd></div>
+            <div class="hr-label__row"><dt>Roasted</dt><dd>The day, written by hand</dd></div>
+            <div class="hr-label__row"><dt>Best within</dt><dd>The next few weeks</dd></div>
+            <div class="hr-label__row"><dt>Roasted by</dt><dd>One of the two of us, by name</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · EASE: how it works. The quiet act before the peak. -->
+  <section class="hr-beat hr-beat--quiet" id="how" data-sc-act="flow" aria-labelledby="how-h">
+    <div class="hr-cols">
+      <div class="hr-col hr-col--shelf">
+        <div class="hr-col__in">
+          <div class="sc-stack hr-stack" data-sc-in data-sc-stagger="70">
+            <h2 class="sc-display sc-display--md hr-h hr-h--shelf">The shelf will still be there.</h2>
+            <p class="hr-body hr-body--shelf">No decisions, no dates, and it is open late. If you ever want to go back, it will not have noticed you left.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hr-col hr-col--roastery">
+        <div class="hr-col__in">
+          <div class="sc-stack hr-stack" data-sc-in data-sc-stagger="70">
+            <h2 class="sc-display sc-display--md hr-h" id="how-h">How it works.</h2>
+            <ol class="hr-steps">
+              <li>Pick a rhythm: every two weeks, or every four.</li>
+              <li>One origin at a time, roasted the week it ships.</li>
+              <li>Whole bean, or ground for your brewer.</li>
+              <li>Pause, skip or stop from a link in every email.</li>
+            </ol>
+          </div>
+          <figure class="hr-figure hr-figure--after" data-sc-reveal="right" data-sc-reveal-at="0.3 0.62">
+            <div class="hr-plate hr-plate--warm hr-plate--wide">
+              <span class="hr-plate__tag"><b>Placeholder</b> · photo · the box on a Bergen doorstep, rain, morning</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · RESOLVE: the collapse. The divider travels to the left edge, the
+       roastery takes the whole frame, the beans drop. Last element on the page,
+       footer inside the stage. -->
+  <section class="hr-close" id="subscribe" data-sc-act="pin" data-sc-span="2.8" aria-labelledby="close-h">
+    <div data-sc-stage class="hr-stage hr-stage--close">
+
+      <div class="hr-close__shelf" aria-hidden="true">
+        <div class="hr-plate hr-plate--cold hr-plate--fill">
+          <span class="hr-plate__tag"><b>Placeholder</b> · footage · the shelf after closing, half the lights off</span>
+        </div>
+      </div>
+
+      <div class="hr-close__roastery" aria-hidden="true">
+        <div class="hr-plane hr-plane--close-back" data-sc-parallax="-0.8"><div class="hr-plane__in"></div></div>
+        <div class="hr-glow"></div>
+        <div class="hr-plane hr-plane--close-subject" data-sc-parallax="-0.3"><div class="hr-plane__in"><span class="hr-plane__tag">Subject · the drum door opening, beans into the cooling tray</span></div></div>
+        <div class="hr-plane hr-plane--close-steam" data-sc-parallax="0.35"><div class="hr-plane__in"></div></div>
+        <p class="hr-shot hr-shot--close"><b>Placeholder</b> · footage, 3 planes · the drop, slow, one warm key from the drum</p>
+      </div>
+
+      <div class="hr-close__copy">
+        <div class="hr-close__copy-in" data-sc-cue="0 1 0 0">
+          <h2 class="sc-display sc-display--lg hr-h" id="close-h">Roasted this week, by someone who was listening.</h2>
+          <p class="hr-lede">One farm at a time, the date on the bag, shipped from the harbour the week it is roasted.</p>
+          <a class="hr-cta" href="#subscribe">Start a subscription</a>
+        </div>
+      </div>
+
+      <footer class="hr-foot" data-sc-cue="0.66 1 0.3 0">
+        <p class="hr-foot__mark">Halden Roast</p>
+        <p>A small roastery by the harbour. Bergen, Norway.</p>
+        <p class="hr-foot__note">Preview build. Photography, footage, contact details and the checkout are placeholders.</p>
+      </footer>
+
+    </div>
+  </section>
+
+</main>
+
+<script src="scrollcraft.js"></script>
+<script>ScrollCraft.mount(document.body);</script>
+<script src="halden.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northlight Studio · Brand and product design for hardware companies</title>
+<meta name="description" content="Northlight is a four-person design studio in Rotterdam. We design the brand, the product and the launch for hardware companies.">
+<script>document.documentElement.classList.add('sc-js');</script>
+<link rel="stylesheet" href="scrollcraft.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="mark" href="#top">Northlight</a>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#team">Team</a>
+    <a class="cta" href="#contact">Start a project</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero" data-sc-act="flow">
+    <div class="hero__scene">
+      <div class="hero__wall" data-sc-parallax="0.9" aria-hidden="true"></div>
+      <div class="hero__light" data-sc-parallax="0.6" aria-hidden="true"></div>
+      <figure class="hero__plate" data-sc-parallax="0.35">
+        <div class="hero__frame ph" data-sc-in>
+          <img class="hero__img" src="assets/hero.jpg" width="2400" height="1500" alt="A matte aluminium speaker on a concrete plinth, lit from one side">
+        </div>
+      </figure>
+      <div class="hero__slab" data-sc-parallax="-0.25" aria-hidden="true"></div>
+      <div class="hero__floor" aria-hidden="true"></div>
+    </div>
+    <div class="hero__copy" data-sc-in data-sc-stagger="80">
+      <h1>Hardware deserves a launch as considered as its enclosure.</h1>
+      <p>We are a four-person studio that designs the brand, the product surfaces and the launch for companies that make physical things.</p>
+      <a class="cta" href="#contact">Start a project</a>
+    </div>
+  </section>
+
+  <section id="work" class="work" data-sc-act="flow">
+    <h2 data-sc-in>Selected work</h2>
+    <ul class="grid" data-sc-in data-sc-stagger="80">
+      <li><div class="ph"><img src="assets/work-1.jpg" width="1200" height="900" alt="Loom smart thermostat on a plaster wall"></div><h3>Loom</h3><p>Thermostat, app and launch film. 2025.</p></li>
+      <li><div class="ph"><img src="assets/work-2.jpg" width="1200" height="900" alt="Anser field microphone in a rubber sleeve"></div><h3>Anser</h3><p>Industrial design and packaging. 2025.</p></li>
+      <li><div class="ph"><img src="assets/work-3.jpg" width="1200" height="900" alt="Kessel espresso machine, brushed steel"></div><h3>Kessel</h3><p>Brand, product photography, store. 2024.</p></li>
+      <li><div class="ph"><img src="assets/work-4.jpg" width="1200" height="900" alt="Verge e-bike controller mounted on handlebars"></div><h3>Verge</h3><p>Controller UI and onboarding. 2024.</p></li>
+    </ul>
+  </section>
+
+  <section id="process" class="process" data-sc-act="pin" data-sc-span="4">
+    <div class="process__stage" data-sc-stage>
+      <div class="process__wrap">
+        <div class="process__copy">
+          <h2>How we work</h2>
+          <ol class="steps">
+            <li data-sc-cue="0 0.30 0 0.3"><span class="n">01</span><h3>Discover</h3><p>Three weeks with your engineers and your customers. We leave with a point of view, not a mood board.</p></li>
+            <li data-sc-cue="0.26 0.54"><span class="n">02</span><h3>Define</h3><p>One brand idea, one product language, one launch story. Written down and signed before pixels.</p></li>
+            <li data-sc-cue="0.50 0.78"><span class="n">03</span><h3>Design</h3><p>Enclosure surfaces, interface, packaging and film, designed together so they agree.</p></li>
+            <li data-sc-cue="0.72 0.96"><span class="n">04</span><h3>Deliver</h3><p>Production-ready files, a launch site, and a week on-site with your team for the release.</p></li>
+          </ol>
+        </div>
+
+        <!-- Signature move: an exploded view of the hero's speaker that closes up,
+             one part per step, driven from the engine's --sc-p in CSS. Decorative;
+             the words are in the list beside it. -->
+        <figure class="assembly" aria-hidden="true">
+          <svg viewBox="0 0 640 560" width="640" height="560" fill="none">
+            <defs>
+              <pattern id="grille-dots" width="12" height="12" patternUnits="userSpaceOnUse">
+                <circle cx="6" cy="6" r="2.1" fill="#26231f"/>
+              </pattern>
+            </defs>
+
+            <!-- datum: a faint horizontal reference the plinth seats on -->
+            <line class="datum" x1="60" y1="476" x2="580" y2="476"/>
+
+            <!-- 01 Discover: the plinth -->
+            <g class="seat" data-a="0.04" data-k="4.545" style="--a:0.04; --k:4.545; --dx:-120; --dy:80">
+              <line class="leader" x1="200" y1="528" x2="320" y2="448"/>
+              <g class="part">
+                <rect x="120" y="420" width="400" height="56" rx="4" fill="#2b2824"/>
+                <rect x="120" y="420" width="400" height="56" rx="4" class="edge"/>
+                <line x1="124" y1="424" x2="516" y2="424" class="lip"/>
+              </g>
+            </g>
+
+            <!-- 02 Define: the body -->
+            <g class="seat" data-a="0.30" data-k="5" style="--a:0.30; --k:5; --dx:-45; --dy:30">
+              <line class="leader" x1="275" y1="358" x2="320" y2="328"/>
+              <g class="part">
+                <rect x="200" y="236" width="240" height="184" rx="26" fill="#3a3733"/>
+                <rect x="200" y="236" width="240" height="184" rx="26" class="edge"/>
+              </g>
+            </g>
+
+            <!-- shadow: the body's contact with the plinth, arrives with the last part -->
+            <ellipse class="contact" cx="320" cy="421" rx="118" ry="5" fill="#0c0b09"/>
+
+            <!-- 03 Design: the grille -->
+            <g class="seat" data-a="0.54" data-k="5" style="--a:0.54; --k:5; --dx:90; --dy:-60">
+              <line class="leader" x1="410" y1="268" x2="320" y2="328"/>
+              <g class="part">
+                <rect x="216" y="252" width="208" height="152" rx="18" fill="#4a4641"/>
+                <rect x="216" y="252" width="208" height="152" rx="18" fill="url(#grille-dots)"/>
+                <rect x="216" y="252" width="208" height="152" rx="18" class="edge"/>
+              </g>
+            </g>
+
+            <!-- 04 Deliver: the dial -->
+            <g class="seat" data-a="0.76" data-k="7.143" style="--a:0.76; --k:7.143; --dx:180; --dy:-120">
+              <line class="leader" x1="500" y1="107" x2="320" y2="227"/>
+              <g class="part">
+                <rect x="292" y="218" width="56" height="18" rx="9" fill="#5a554d"/>
+                <rect x="292" y="218" width="56" height="18" rx="9" class="edge"/>
+                <line x1="320" y1="221" x2="320" y2="227" class="lip"/>
+              </g>
+            </g>
+          </svg>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="numbers" data-sc-act="flow">
+    <ul data-sc-in data-sc-stagger="90">
+      <li><strong><span data-sc-count="0 14">14</span></strong><span>products shipped</span></li>
+      <li><strong><span data-sc-count="0 4">4</span></strong><span>people, no account managers</span></li>
+      <li><strong><span data-sc-count="0 9">9</span> yrs</strong><span>average client relationship</span></li>
+    </ul>
+  </section>
+
+  <section class="quote" data-sc-act="flow">
+    <blockquote>
+      <p data-sc-cue="0.16" data-sc-kinetic="lines">“They understood that the unboxing is the first thirty seconds of the product. Our return rate halved.”</p>
+      <footer data-sc-cue="0.26">Ida Berglund, founder, Loom</footer>
+    </blockquote>
+  </section>
+
+  <section id="team" class="team" data-sc-act="flow">
+    <h2 data-sc-in>The four of us</h2>
+    <ul class="grid" data-sc-reveal="left" data-sc-reveal-at="0.12 0.42">
+      <li><div class="ph"><img src="assets/team-1.jpg" width="800" height="1000" alt="Portrait of Mara"></div><h3>Mara</h3><p>Industrial design</p></li>
+      <li><div class="ph"><img src="assets/team-2.jpg" width="800" height="1000" alt="Portrait of Tobias"></div><h3>Tobias</h3><p>Brand and type</p></li>
+      <li><div class="ph"><img src="assets/team-3.jpg" width="800" height="1000" alt="Portrait of Sena"></div><h3>Sena</h3><p>Interface</p></li>
+      <li><div class="ph"><img src="assets/team-4.jpg" width="800" height="1000" alt="Portrait of Joris"></div><h3>Joris</h3><p>Film and photography</p></li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact" data-sc-act="flow">
+    <div class="contact__wrap" data-sc-in data-sc-stagger="70">
+      <h2>Start a project</h2>
+      <p>We take on four projects a year. Tell us what you are making and when it needs to ship.</p>
+      <form action="/inquire" method="post">
+        <label>Your name <input name="name" required></label>
+        <label>Email <input name="email" type="email" required></label>
+        <label>What are you making? <textarea name="brief" rows="4"></textarea></label>
+        <button class="cta" type="submit">Start a project</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <span>Northlight Studio, Rotterdam</span>
+  <span>hello@northlight.example</span>
+</footer>
+
+<script src="scrollcraft.js"></script>
+<script>
+(function () {
+  // Mount the engine over the page content only. The bar stays outside it.
+  if (window.ScrollCraft) ScrollCraft.mount(document.querySelector('main'));
+
+  // The exploded view is driven from --sc-p in CSS, which the verification
+  // harness cannot see. Publish the rendered assembly state (the eased seat
+  // value of each part, rounded) so dead scroll inside the pin is measurable.
+  var act = document.getElementById('process');
+  var stage = act && act.querySelector('[data-sc-stage]');
+  if (!stage) return;
+  var seats = act.querySelectorAll('.seat');
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var last = null, queued = false;
+  function ease(t) { return t * t * (3 - 2 * t); }
+  function publish() {
+    queued = false;
+    if (reduce) { stage.setAttribute('data-sc-verify-state', 'assembled'); return; }
+    var p = parseFloat(getComputedStyle(act).getPropertyValue('--sc-p')) || 0;
+    var sig = Array.prototype.map.call(seats, function (g) {
+      var t = Math.min(1, Math.max(0, (p - parseFloat(g.dataset.a)) * parseFloat(g.dataset.k)));
+      return ease(t).toFixed(2);
+    }).join(' ');
+    if (sig !== last) { last = sig; stage.setAttribute('data-sc-verify-state', sig); }
+  }
+  function queue() { if (!queued) { queued = true; requestAnimationFrame(publish); } }
+  addEventListener('scroll', queue, { passive: true });
+  addEventListener('resize', queue, { passive: true });
+  publish();
+})();
+</script>
+
+</body>
+</html>

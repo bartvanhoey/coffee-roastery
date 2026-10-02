@@ -1,0 +1,19 @@
+{
+  "eval_id": 2,
+  "eval_name": "agency-site-upgrade",
+  "prompt": "Here is our studio website: index.html and styles.css in the site folder. A client told us it looks like a template. Make the scrolling feel premium and considered, in keeping with a design studio that works for hardware companies. Do not change the copy, the section order, the nav or the contact form. The images referenced under assets/ are not in the folder yet, so treat them as placeholders that will be filled in later. It has to work on phones and for people who have reduced motion turned on. Show me how you checked it.",
+  "assertions": [
+    "Engine files scrollcraft.js and scrollcraft.css are present in the build output",
+    "With JavaScript disabled, every heading and paragraph on the page renders at full opacity (no content hidden behind a script-only reveal)",
+    "With prefers-reduced-motion: reduce emulated, every heading and paragraph is visible and none carries a translation transform",
+    "A brief file (BRIEF*.md) exists and names a feeling curve and a single peak",
+    "The page uses at least three distinct data-sc-act device families and never the same act type twice in a row",
+    "No 'scroll to explore' cue, arrow or animated mouse icon is present in the markup",
+    "Verification evidence exists: at least one screenshot or contact sheet (PNG) produced by the run",
+    "REPORT.md states explicitly what was verified and what was not, and mentions the reduced-motion and no-JavaScript checks",
+    "All original copy is preserved: every heading and paragraph text from the original index.html appears unchanged in the modified file",
+    "Section order, nav links and the contact form (action, method, fields, button label) are unchanged",
+    "The step numbers 01-04 in the process section are preserved as content (they are not act counters)",
+    "The page works at a 390px viewport: no horizontal overflow and all headings visible when scrolled to"
+  ]
+}

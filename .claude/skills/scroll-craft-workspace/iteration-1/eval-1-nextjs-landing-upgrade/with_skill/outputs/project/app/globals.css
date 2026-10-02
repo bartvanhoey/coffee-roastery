@@ -1,0 +1,297 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------ tokens --
+   The page's own stone palette mapped onto the engine's six roles. One
+   accent (cobalt) used only for focus rings and selection, at two
+   lightnesses because the page hard-cuts between light and dark grounds. */
+:root {
+  --sc-canvas: #fafaf9;
+  --sc-surface: #ffffff;
+  --sc-ink: #1c1917;
+  --sc-ink-soft: #57534e;
+  --sc-accent: #2f56d6;
+  --sc-accent-ink: #fafaf9;
+  --sc-font-display: var(--font-geist), system-ui, sans-serif;
+  --sc-font-text: var(--font-geist), system-ui, sans-serif;
+  --sc-shadow-color: 30 12% 12%;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist), system-ui, sans-serif;
+}
+
+/* Dark grounds restate the tokens AND color, because color is inherited as a
+   computed value and does not re-resolve when a token changes underneath it. */
+.ground-dark {
+  --sc-canvas: #1c1917;
+  --sc-surface: #292524;
+  --sc-ink: #fafaf9;
+  --sc-ink-soft: #d6d3d1;
+  --sc-accent: #a3b4ff;
+  --sc-accent-ink: #1c1917;
+  --sc-shadow-color: 20 10% 3%;
+  color: var(--sc-ink);
+}
+
+/* Anchored sections land below the sticky header. */
+[data-tilt-chapter] {
+  scroll-margin-top: 4.5rem;
+}
+
+/* ----------------------------------------------------- reserved boxes --
+   The grey boxes are where product images will go. Depth (offset shadow,
+   edge light) so they read as surfaces in a lit room, not flat fills. */
+.ph {
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.7),
+    var(--sc-e2);
+}
+.ph--raised {
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.8),
+    var(--sc-e3);
+}
+
+/* ------------------------------------------------------------- hero --
+   A pinned stage with independently moving planes. The pre-mount rules are
+   gated on html.sc-js so the no-script document is a normal block; the
+   engine then adds .sc-stage and writes the act height inline. */
+.hero-act {
+  position: relative;
+}
+.sc-js .hero-act {
+  height: 170vh;
+}
+.hero-stage {
+  position: relative;
+  min-height: 100svh;
+  display: grid;
+  align-items: center;
+  isolation: isolate;
+  padding-top: 3.5rem;
+}
+.sc-js .hero-stage {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  min-height: 0;
+  overflow: clip;
+}
+.hero-grid {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.hero-plane {
+  position: absolute;
+  pointer-events: none;
+}
+/* Far: the room. A soft key light and the faint ring of a dial, blurred a
+   touch because distance is softer. */
+.hero-far {
+  inset: -18% -12%;
+  z-index: 0;
+  background: radial-gradient(52% 46% at 70% 38%, #ffffff 0%, rgb(255 255 255 / 0) 62%);
+}
+.hero-far::after {
+  content: "";
+  position: absolute;
+  left: 66%;
+  top: 52%;
+  width: 62vmin;
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  border-radius: 50%;
+  border: 1px solid rgb(28 25 23 / 0.1);
+  filter: blur(0.6px);
+}
+/* Atmosphere: a band of light that drifts the other way, slowly. */
+.hero-haze {
+  inset: -30% -10% auto -10%;
+  height: 70%;
+  z-index: 0;
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.85), rgb(255 255 255 / 0));
+}
+/* The subject group: product plane and the nearer detail plane. */
+.hero-subject {
+  position: relative;
+  width: fit-content;
+  margin-inline: auto;
+}
+.hero-product {
+  height: clamp(300px, 62svh, 680px);
+  width: auto;
+}
+.hero-near {
+  position: absolute;
+  left: -13%;
+  bottom: -5%;
+  width: 44%;
+  z-index: 2;
+}
+.hero-near > div {
+  aspect-ratio: 1;
+}
+/* The stage floor fades to the canvas so plane clipping never shows. */
+.hero-floor {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 22%;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgb(250 250 249 / 0), var(--sc-canvas));
+}
+@media (max-width: 767px) {
+  .hero-stage {
+    padding-top: 4.5rem;
+    align-items: start;
+  }
+  .hero-grid {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: 1.5rem;
+    align-content: start;
+  }
+  .hero-subject {
+    margin-inline: 0 0;
+    margin-left: auto;
+    align-self: end;
+    margin-bottom: 2.5rem;
+  }
+  .hero-product {
+    aspect-ratio: 4 / 3;
+    height: min(30svh, 56vw);
+  }
+  .hero-near {
+    left: -16%;
+    bottom: -8%;
+    width: 42%;
+  }
+  .hero-far::after {
+    left: 70%;
+    top: 68%;
+    width: 78vmin;
+  }
+}
+
+/* --------------------------------------------------------- machined --
+   The peak. Dark ground already there, the frame outline already drawn; the
+   fill wipes in under the reader's hand. Same sc-js gating as the hero. */
+.machined-act {
+  position: relative;
+}
+.sc-js .machined-act {
+  height: 240vh;
+}
+.machined-stage {
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+.sc-js .machined-stage {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: clip;
+  padding-block: 0;
+}
+.machined-frame {
+  position: relative;
+  border: 1px solid rgb(250 250 249 / 0.16);
+  box-shadow: var(--sc-e3);
+}
+.machined-fill {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08);
+}
+
+/* ------------------------------------------------------------- dial -- */
+[data-tilt-dial] {
+  display: block;
+  color: inherit;
+}
+.dial-ring {
+  fill: none;
+  stroke: currentColor;
+  stroke-opacity: 0.22;
+  stroke-width: 1;
+  transition: stroke-opacity 260ms var(--sc-ease-out);
+}
+[data-tick],
+.dial-stop {
+  stroke: currentColor;
+  stroke-opacity: 0.26;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  transition: stroke-opacity 220ms var(--sc-ease-out);
+}
+[data-tick][data-lit] {
+  stroke-opacity: 1;
+}
+.dial-needle {
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+}
+.dial-hub {
+  fill: currentColor;
+}
+[data-tilt-dial][data-locked] .dial-ring,
+[data-tilt-dial][data-locked] .dial-stop {
+  stroke-opacity: 1;
+}
+
+/* ---------------------------------------------------------- controls --
+   Every pressable thing gets hover, focus-visible and press feedback. */
+.cta {
+  transition:
+    translate 160ms var(--sc-ease-out),
+    scale 120ms var(--sc-ease-out),
+    background-color 160ms var(--sc-ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .cta:hover {
+    translate: 0 -1px;
+  }
+}
+.cta:active {
+  scale: 0.97;
+  translate: 0 1px;
+}
+.nav-link {
+  text-decoration: none;
+  text-underline-offset: 0.28em;
+  transition: text-decoration-color 160ms var(--sc-ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+}
+.step {
+  transition:
+    translate 220ms var(--sc-ease-out),
+    box-shadow 220ms var(--sc-ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .step:hover {
+    translate: 0 -2px;
+    box-shadow: var(--sc-e2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta,
+  .step,
+  .dial-ring,
+  [data-tick],
+  .dial-stop {
+    transition: none;
+  }
+  .cta:hover,
+  .step:hover {
+    translate: none;
+  }
+}

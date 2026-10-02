@@ -1,0 +1,74 @@
+{
+  "skill_name": "scroll-craft",
+  "evals": [
+    {
+      "id": 0,
+      "name": "coffee-roaster-new-page",
+      "prompt": "Build me a scroll-driven landing page for Halden Roast, a small specialty coffee roaster in Bergen, Norway. Two people, one roastery by the harbour, they sell single-origin beans by subscription. The page should convince a visitor that Halden roasts more carefully than the supermarket and get them to start a subscription (button label: \"Start a subscription\"). I want it to feel premium and calm, like a Scandinavian cinema ad, not like a Shopify theme. I have no photos or footage yet, so use honest placeholders where images or clips would go. Use your judgment on creative direction, I do not want an interview. Plain static HTML/CSS/JS is fine. Put everything in the output folder and tell me how to open it.",
+      "expected_output": "A standalone static build (index.html plus engine files and CSS) with a written brief, a varied scroll score, one clear peak, reserved placeholder boxes rather than stock or invented imagery, content readable with JavaScript disabled and under reduced motion, and a report that says what was verified.",
+      "files": [],
+      "expectations": [
+        "Engine files scrollcraft.js and scrollcraft.css are present in the build output",
+        "With JavaScript disabled, every heading and paragraph on the page renders at full opacity (no content hidden behind a script-only reveal)",
+        "With prefers-reduced-motion: reduce emulated, every heading and paragraph is visible and none carries a translation transform",
+        "A brief file (BRIEF*.md) exists and names a feeling curve and a single peak",
+        "The page uses at least three distinct data-sc-act device families and never the same act type twice in a row",
+        "No 'scroll to explore' cue, arrow or animated mouse icon is present in the markup",
+        "Verification evidence exists: at least one screenshot or contact sheet (PNG) produced by the run",
+        "REPORT.md states explicitly what was verified and what was not, and mentions the reduced-motion and no-JavaScript checks",
+        "index.html exists and the primary call to action reads exactly 'Start a subscription'",
+        "Placeholders are honest: no external image or video URLs (http/https src) and no stock imagery are used",
+        "At least four distinct device families are used (new page), including a layered hero with more than one independently moving plane"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "nextjs-landing-upgrade",
+      "prompt": "This is my Next.js 16 App Router project (Tailwind 4). The landing page in app/page.tsx is for Tilt, a pour-over coffee scale, and it reads like a template: static sections, nothing happens when you scroll. Make it feel premium when you scroll. Keep every word of copy, every section and the section order exactly as they are, and keep the header and footer. The hero should have real depth, not just a fade-in. I have no footage; the grey rounded boxes are where product images will go, so treat them as placeholders. It must respect prefers-reduced-motion and the content must still show if JavaScript is disabled. Run the dev server on port {PORT} and verify it actually works before you hand it back.",
+      "expected_output": "The Next.js project modified in place: engine files added, a client mount component with teardown, an inline head script so content is never hidden without JavaScript, data-sc-* attributes on the existing sections with unchanged copy and order, a layered hero, and a report describing verification against the running dev server (desktop, mobile, reduced motion, no-JS, route round-trip).",
+      "files": [
+        "evals/files/nextjs-page/page.tsx"
+      ],
+      "expectations": [
+        "Engine files scrollcraft.js and scrollcraft.css are present in the build output",
+        "With JavaScript disabled, every heading and paragraph on the page renders at full opacity (no content hidden behind a script-only reveal)",
+        "With prefers-reduced-motion: reduce emulated, every heading and paragraph is visible and none carries a translation transform",
+        "A brief file (BRIEF*.md) exists and names a feeling curve and a single peak",
+        "The page uses at least three distinct data-sc-act device families and never the same act type twice in a row",
+        "No 'scroll to explore' cue, arrow or animated mouse icon is present in the markup",
+        "Verification evidence exists: at least one screenshot or contact sheet (PNG) produced by the run",
+        "REPORT.md states explicitly what was verified and what was not, and mentions the reduced-motion and no-JavaScript checks",
+        "Every copy string from the original app/page.tsx still appears in the modified page, and sections keep their original order (hero, how, machined, specs, quote, order)",
+        "app/layout.tsx adds the sc-js class from an inline head script and marks <html> with suppressHydrationWarning",
+        "The engine is mounted from a client component that dynamically imports scrollcraft.js inside an effect and calls destroy() in its cleanup",
+        "The engine files under lib/ (or equivalent) are byte-identical to the skill's engine (not edited per project)",
+        "The hero has real depth: at least two elements inside the hero act carry independent scroll-driven movement (data-sc-parallax with different rates, or an equivalent layered device)",
+        "The dev server starts and the page renders without console errors"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "agency-site-upgrade",
+      "prompt": "Here is our studio website: index.html and styles.css in the site folder. A client told us it looks like a template. Make the scrolling feel premium and considered, in keeping with a design studio that works for hardware companies. Do not change the copy, the section order, the nav or the contact form. The images referenced under assets/ are not in the folder yet, so treat them as placeholders that will be filled in later. It has to work on phones and for people who have reduced motion turned on. Show me how you checked it.",
+      "expected_output": "The static site upgraded in place: engine files added, an inline head script for the no-JS state, existing sections wrapped in acts with settled entrances and one or two hero moments, copy and form untouched, reduced-motion and no-JS states verified, mobile checked, with a short report of what was verified and how.",
+      "files": [
+        "evals/files/agency-site/index.html",
+        "evals/files/agency-site/styles.css"
+      ],
+      "expectations": [
+        "Engine files scrollcraft.js and scrollcraft.css are present in the build output",
+        "With JavaScript disabled, every heading and paragraph on the page renders at full opacity (no content hidden behind a script-only reveal)",
+        "With prefers-reduced-motion: reduce emulated, every heading and paragraph is visible and none carries a translation transform",
+        "A brief file (BRIEF*.md) exists and names a feeling curve and a single peak",
+        "The page uses at least three distinct data-sc-act device families and never the same act type twice in a row",
+        "No 'scroll to explore' cue, arrow or animated mouse icon is present in the markup",
+        "Verification evidence exists: at least one screenshot or contact sheet (PNG) produced by the run",
+        "REPORT.md states explicitly what was verified and what was not, and mentions the reduced-motion and no-JavaScript checks",
+        "All original copy is preserved: every heading and paragraph text from the original index.html appears unchanged in the modified file",
+        "Section order, nav links and the contact form (action, method, fields, button label) are unchanged",
+        "The step numbers 01-04 in the process section are preserved as content (they are not act counters)",
+        "The page works at a 390px viewport: no horizontal overflow and all headings visible when scrolled to"
+      ]
+    }
+  ]
+}

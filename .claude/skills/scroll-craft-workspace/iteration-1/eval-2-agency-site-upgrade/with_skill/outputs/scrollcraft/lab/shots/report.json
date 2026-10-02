@@ -1,0 +1,1244 @@
+{
+  "doc": {
+    "height": 8247,
+    "vh": 900,
+    "acts": [
+      "flow",
+      "flow",
+      "pin",
+      "flow",
+      "flow",
+      "flow",
+      "flow"
+    ],
+    "world": null
+  },
+  "report": [
+    {
+      "i": 0,
+      "y": 0,
+      "pct": 0,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        2387
+      ],
+      "segs": [],
+      "custom": [
+        "0.00 0.00 0.00 0.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 1,
+      "y": 21,
+      "pct": 0,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        2366
+      ],
+      "segs": [],
+      "custom": [
+        "0.00 0.00 0.00 0.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 2,
+      "y": 189,
+      "pct": 3,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        2198
+      ],
+      "segs": [],
+      "custom": [
+        "0.00 0.00 0.00 0.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 3,
+      "y": 484,
+      "pct": 7,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        1903
+      ],
+      "segs": [],
+      "custom": [
+        "0.00 0.00 0.00 0.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 4,
+      "y": 514,
+      "pct": 7,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        1873
+      ],
+      "segs": [],
+      "custom": [
+        "0.00 0.00 0.00 0.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 5,
+      "y": 839,
+      "pct": 11,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        1548
+      ],
+      "segs": [],
+      "custom": [
+        "0.00 0.00 0.00 0.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 6,
+      "y": 948,
+      "pct": 13,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        1439
+      ],
+      "segs": [],
+      "custom": [
+        "0.00 0.00 0.00 0.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 7,
+      "y": 1411,
+      "pct": 19,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        976
+      ],
+      "segs": [],
+      "custom": [
+        "0.00 0.00 0.00 0.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 8,
+      "y": 1875,
+      "pct": 26,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        512
+      ],
+      "segs": [],
+      "custom": [
+        "0.00 0.00 0.00 0.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 9,
+      "y": 2338,
+      "pct": 32,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "01DiscoverThree weeks with your engineer",
+          "dir": "light-on-dark",
+          "worst": 14.95,
+          "mean": 14.95
+        }
+      ],
+      "cues": [
+        {
+          "t": "01DiscoverThree weeks with your engineers and ",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        49
+      ],
+      "segs": [],
+      "custom": [
+        "0.00 0.00 0.00 0.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 10,
+      "y": 2441,
+      "pct": 33,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "01DiscoverThree weeks with your engineer",
+          "dir": "light-on-dark",
+          "worst": 14.95,
+          "mean": 14.95
+        }
+      ],
+      "cues": [
+        {
+          "t": "01DiscoverThree weeks with your engineers and ",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [
+        "0.00 0.00 0.00 0.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 11,
+      "y": 2959,
+      "pct": 40,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "01DiscoverThree weeks with your engineer",
+          "dir": "light-on-dark",
+          "worst": 14.95,
+          "mean": 14.95
+        }
+      ],
+      "cues": [
+        {
+          "t": "01DiscoverThree weeks with your engineers and ",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [
+        "0.88 0.00 0.00 0.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 12,
+      "y": 3477,
+      "pct": 47,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "02DefineOne brand idea, one product lang",
+          "dir": "light-on-dark",
+          "worst": 14.95,
+          "mean": 14.95
+        }
+      ],
+      "cues": [
+        {
+          "t": "02DefineOne brand idea, one product language, ",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 0.53 0.00 0.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 13,
+      "y": 3996,
+      "pct": 54,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "03DesignEnclosure surfaces, interface, p",
+          "dir": "light-on-dark",
+          "worst": 14.95,
+          "mean": 14.95
+        }
+      ],
+      "cues": [
+        {
+          "t": "03DesignEnclosure surfaces, interface, packagi",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 0.19 0.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 14,
+      "y": 4514,
+      "pct": 61,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "04DeliverProduction-ready files, a launc",
+          "dir": "light-on-dark",
+          "worst": 14.95,
+          "mean": 14.95
+        }
+      ],
+      "cues": [
+        {
+          "t": "04DeliverProduction-ready files, a launch site",
+          "o": 0.99
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 0.10"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 15,
+      "y": 5033,
+      "pct": 69,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 16,
+      "y": 5111,
+      "pct": 70,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        -24
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 17,
+      "y": 5339,
+      "pct": 73,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        -252
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 18,
+      "y": 5402,
+      "pct": 74,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        -315
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 19,
+      "y": 5568,
+      "pct": 76,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 100% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -481
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 20,
+      "y": 5637,
+      "pct": 77,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "“They understood that the unboxing is the firs",
+          "o": 0.54
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 100% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -550
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 21,
+      "y": 5734,
+      "pct": 78,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "“They understood that the unboxing is th",
+          "dir": "dark-on-light",
+          "worst": 16.49,
+          "mean": 16.49
+        }
+      ],
+      "cues": [
+        {
+          "t": "“They understood that the unboxing is the firs",
+          "o": 1
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "o": 0.08
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 100% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -647
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 22,
+      "y": 5797,
+      "pct": 79,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "“They understood that the unboxing is th",
+          "dir": "dark-on-light",
+          "worst": 16.49,
+          "mean": 16.49
+        }
+      ],
+      "cues": [
+        {
+          "t": "“They understood that the unboxing is the firs",
+          "o": 1
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "o": 0.44
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 100% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -710
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 23,
+      "y": 5872,
+      "pct": 80,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "“They understood that the unboxing is th",
+          "dir": "dark-on-light",
+          "worst": 16.49,
+          "mean": 16.49
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "dir": "dark-on-light",
+          "worst": 5.23,
+          "mean": 5.23
+        }
+      ],
+      "cues": [
+        {
+          "t": "“They understood that the unboxing is the firs",
+          "o": 1
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "o": 0.9
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 100% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -785
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 24,
+      "y": 6025,
+      "pct": 82,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "“They understood that the unboxing is th",
+          "dir": "dark-on-light",
+          "worst": 16.49,
+          "mean": 16.49
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "dir": "dark-on-light",
+          "worst": 5.23,
+          "mean": 5.23
+        }
+      ],
+      "cues": [
+        {
+          "t": "“They understood that the unboxing is the firs",
+          "o": 1
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 84.11% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -938
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 25,
+      "y": 6052,
+      "pct": 82,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "“They understood that the unboxing is th",
+          "dir": "dark-on-light",
+          "worst": 16.49,
+          "mean": 16.49
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "dir": "dark-on-light",
+          "worst": 5.23,
+          "mean": 5.23
+        }
+      ],
+      "cues": [
+        {
+          "t": "“They understood that the unboxing is the firs",
+          "o": 1
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 77.55% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -965
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 26,
+      "y": 6107,
+      "pct": 83,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "“They understood that the unboxing is th",
+          "dir": "dark-on-light",
+          "worst": 16.49,
+          "mean": 16.49
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "dir": "dark-on-light",
+          "worst": 5.23,
+          "mean": 5.23
+        }
+      ],
+      "cues": [
+        {
+          "t": "“They understood that the unboxing is the firs",
+          "o": 1
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 62.26% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1020
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 27,
+      "y": 6254,
+      "pct": 85,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "“They understood that the unboxing is th",
+          "dir": "dark-on-light",
+          "worst": 16.49,
+          "mean": 16.49
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "dir": "dark-on-light",
+          "worst": 5.23,
+          "mean": 5.23
+        }
+      ],
+      "cues": [
+        {
+          "t": "“They understood that the unboxing is the firs",
+          "o": 1
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 19.89% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1167
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 28,
+      "y": 6342,
+      "pct": 86,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "“They understood that the unboxing is th",
+          "dir": "dark-on-light",
+          "worst": 16.49,
+          "mean": 16.49
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "dir": "dark-on-light",
+          "worst": 5.23,
+          "mean": 5.23
+        }
+      ],
+      "cues": [
+        {
+          "t": "“They understood that the unboxing is the firs",
+          "o": 1
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 3.3% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1255
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 29,
+      "y": 6369,
+      "pct": 87,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "“They understood that the unboxing is th",
+          "dir": "dark-on-light",
+          "worst": 16.49,
+          "mean": 16.49
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "dir": "dark-on-light",
+          "worst": 5.23,
+          "mean": 5.23
+        }
+      ],
+      "cues": [
+        {
+          "t": "“They understood that the unboxing is the firs",
+          "o": 1
+        },
+        {
+          "t": "Ida Berglund, founder, Loom",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0.86% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1282
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 30,
+      "y": 6490,
+      "pct": 88,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1403
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 31,
+      "y": 6576,
+      "pct": 90,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1489
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 32,
+      "y": 6687,
+      "pct": 91,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1600
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 33,
+      "y": 6815,
+      "pct": 93,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1728
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 34,
+      "y": 7005,
+      "pct": 95,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1918
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 35,
+      "y": 7141,
+      "pct": 97,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -2054
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 36,
+      "y": 7322,
+      "pct": 100,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -2235
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    },
+    {
+      "i": 37,
+      "y": 7347,
+      "pct": 100,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0% 0px 0px)"
+      ],
+      "act": "flow",
+      "stages": [
+        -2260
+      ],
+      "segs": [],
+      "custom": [
+        "1.00 1.00 1.00 1.00"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#f6f3ee"
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "failed": []
+}

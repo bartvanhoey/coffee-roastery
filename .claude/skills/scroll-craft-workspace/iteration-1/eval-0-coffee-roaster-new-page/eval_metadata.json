@@ -1,0 +1,18 @@
+{
+  "eval_id": 0,
+  "eval_name": "coffee-roaster-new-page",
+  "prompt": "Build me a scroll-driven landing page for Halden Roast, a small specialty coffee roaster in Bergen, Norway. Two people, one roastery by the harbour, they sell single-origin beans by subscription. The page should convince a visitor that Halden roasts more carefully than the supermarket and get them to start a subscription (button label: \"Start a subscription\"). I want it to feel premium and calm, like a Scandinavian cinema ad, not like a Shopify theme. I have no photos or footage yet, so use honest placeholders where images or clips would go. Use your judgment on creative direction, I do not want an interview. Plain static HTML/CSS/JS is fine. Put everything in the output folder and tell me how to open it.",
+  "assertions": [
+    "Engine files scrollcraft.js and scrollcraft.css are present in the build output",
+    "With JavaScript disabled, every heading and paragraph on the page renders at full opacity (no content hidden behind a script-only reveal)",
+    "With prefers-reduced-motion: reduce emulated, every heading and paragraph is visible and none carries a translation transform",
+    "A brief file (BRIEF*.md) exists and names a feeling curve and a single peak",
+    "The page uses at least three distinct data-sc-act device families and never the same act type twice in a row",
+    "No 'scroll to explore' cue, arrow or animated mouse icon is present in the markup",
+    "Verification evidence exists: at least one screenshot or contact sheet (PNG) produced by the run",
+    "REPORT.md states explicitly what was verified and what was not, and mentions the reduced-motion and no-JavaScript checks",
+    "index.html exists and the primary call to action reads exactly 'Start a subscription'",
+    "Placeholders are honest: no external image or video URLs (http/https src) and no stock imagery are used",
+    "At least four distinct device families are used (new page), including a layered hero with more than one independently moving plane"
+  ]
+}
